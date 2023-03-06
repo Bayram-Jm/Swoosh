@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.bayram.swoosh.MainActivity"
+    >
 
 
     <ImageView
@@ -18,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/welcomescreenbg" />
+        app:srcCompat="@drawable/welcomescreenbg"
+        android:contentDescription="@string/background_image" />
 
     <ImageView
         android:id="@+id/logo"
@@ -30,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/app_logo" />
 
     <TextView
         android:id="@+id/mainText"
@@ -38,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/montserrat"
-        android:text="ELDEN GELEN"
+        android:text="@string/elden_gelen"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
-        android:text="MÜMKINÇILIKLERI GIDIRME!"
+        android:text="@string/m_mkin_ilikleri_gidirme"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +67,7 @@
         android:layout_marginTop="36dp"
         android:fontFamily="@font/montserrat_medium"
         android:singleLine="false"
-        android:text="Şäheriňizde topar tapyň we ligaňyzda agdaklyk ediň."
+        android:text="@string/heri_izde_topar_tapy_we_liga_yzda_agdaklyk_edi"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -74,12 +77,12 @@
         app:layout_constraintTop_toBottomOf="@+id/mainText2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonStart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat_medium"
-        android:text="BAŞLA!"
+        android:text="@string/ba_la"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

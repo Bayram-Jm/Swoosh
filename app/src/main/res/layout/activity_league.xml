@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context="com.bayram.swoosh.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/background_image" />
 
     <ImageView
         android:id="@+id/logo"
@@ -29,7 +30,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/app_logo" />
 
     <TextView
         android:id="@+id/legueText"
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Isleýän ligaň:"
+        android:text="@string/isle_n_liga"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +62,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toogle"
-            android:text="Erkekler"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/erkekler"
             android:textColor="@color/white"
-            android:textOff="Erkekler"
-            android:textOn="Erkekler" />
+            android:textOff="@string/erkekler"
+            android:textOn="@string/erkekler" />
 
         <ToggleButton
             android:id="@+id/toggleButton5"
@@ -72,20 +75,22 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toogle"
-            android:text="Aýallar"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/a_allar"
             android:textColor="@color/white"
-            android:textOff="Aýallar"
-            android:textOn="Aýallar" />
+            android:textOff="@string/a_allar"
+            android:textOn="@string/a_allar" />
 
         <ToggleButton
             android:id="@+id/toggleButton6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toogle"
-            android:text="Bilelikde"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/bilelikde"
             android:textColor="@color/white"
-            android:textOff="Bilelikde"
-            android:textOn="Bilelikde" />
+            android:textOff="@string/bilelikde"
+            android:textOn="@string/bilelikde" />
     </LinearLayout>
 
 
@@ -95,7 +100,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Indiki..."
+        android:text="@string/indiki"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
