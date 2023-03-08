@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import com.bayram.swoosh.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val leagueIntent = Intent(this, LeagueActivity::class.java)
         startActivity(leagueIntent)
     }
+
     }
 
 
