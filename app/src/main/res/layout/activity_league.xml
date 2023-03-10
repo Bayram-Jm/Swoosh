@@ -58,39 +58,45 @@
         app:layout_constraintTop_toBottomOf="@+id/legueText">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/mensLeugueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onMensClicked"
             android:text="@string/erkekler"
             android:textColor="@color/white"
             android:textOff="@string/erkekler"
-            android:textOn="@string/erkekler" />
+            android:textOn="@string/erkekler"
+            tools:ignore="OnClick" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/womensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onWomensClicked"
             android:text="@string/a_allar"
             android:textColor="@color/white"
             android:textOff="@string/a_allar"
-            android:textOn="@string/a_allar" />
+            android:textOn="@string/a_allar"
+            tools:ignore="OnClick" />
 
         <ToggleButton
-            android:id="@+id/toggleButton6"
+            android:id="@+id/coLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onCoClicked"
             android:text="@string/bilelikde"
             android:textColor="@color/white"
             android:textOff="@string/bilelikde"
-            android:textOn="@string/bilelikde" />
+            android:textOn="@string/bilelikde"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 
